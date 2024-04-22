@@ -1,0 +1,14 @@
+name: practice_by_myself
+on: push
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: just for checking
+        uses: actions/checkout@v3
+      
+      - name: Install Dependency
+        run: npm ci
+      
+      - name: Deploy code
+        run: echo "Deploying..."
